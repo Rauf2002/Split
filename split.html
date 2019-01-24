@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let string = "menim kitabim kodlabdandir";
+    var arr = [];
+    var word = "";
+    for (let i = 0; i < string.length; i++) {
+       if( string[1] !=" ")  word =word + string[i];
+        if (string[i] ==" "){
+            arr.push(word);
+            word = "";
+
+
+        }
+        if ((string.length-1) == i){
+            arr.push(word);
+        
+           
+        }
+
+    }
+    console.log(arr)
+
+    </script>
+</body>
+</html>
